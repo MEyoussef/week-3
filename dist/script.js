@@ -59,4 +59,14 @@ console.log(player1.details()); // VIP Osama, Type Is Mage Level Is 90
 console.log(player2.details()); // Shady, Type Is Archer Level Is 85
 console.log(player3.details()); // VIP Amr, Type Is Fighter Level Is 50
 console.log(player4.details()); // Mahmoud, Type Is Assassin Level Is 77
+class Shorten {
+    constructor(id, username, title) {
+        this.i = id;
+        this.u = username;
+        this.t = title;
+    }
+}
+let tester = new Shorten(100, "Elzero", "Developer");
+console.log(tester.i);
+console.log(tester.u);
 //# sourceMappingURL=script.js.map
