@@ -69,4 +69,24 @@ class Shorten {
 let tester = new Shorten(100, "Elzero", "Developer");
 console.log(tester.i);
 console.log(tester.u);
+// Create Your Class Here
+class Player2 {
+    constructor(id, title, level) {
+        this.id = id;
+        this.title = title;
+        this.level = level;
+    }
+    logIn() {
+        console.log("Logged In");
+    }
+    logOut(msg) {
+        console.log(`Logged Out, ${msg}`);
+    }
+}
+let player100 = new Player2(100, "Elzero", 95);
+console.log(player100.id); // 100
+console.log(player100.title); // "Elzero"
+console.log(player100.level); // 95
+player100.logIn(); // Logged In
+player100.logOut("Good Bye"); // Logged Out, Good Bye
 //# sourceMappingURL=script.js.map

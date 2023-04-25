@@ -112,3 +112,47 @@ let tester = new Shorten(100, "Elzero", "Developer");
 
 console.log(tester.i);
 console.log(tester.u);
+
+
+// class Show {
+//   constructor (private _title: string) {}
+// }
+
+// let tester = new Show("Elzero");
+
+// console.log(tester.title); // Property 'title' does not exist on type 'Show'
+// tester.title = "Osama"; // Property 'title' does not exist on type 'Show'
+// console.log(tester.title); // Property 'title' does not exist on type 'Show'
+
+interface Play {
+  id: number;
+  title: string;
+  level: number | string;
+  logIn(): void;
+  logOut(msg: string): void;
+}
+
+// Create Your Class Here
+class Player2 {
+  id: number;
+  title: string;
+  level: number | string
+  constructor(id: number, title: string, level: number | string) {
+    this.id = id;
+    this.title = title;
+    this.level = level;
+  }
+  logIn(): void {
+    console.log("Logged In")
+  }
+  logOut(msg: string): void {
+    console.log(`Logged Out, ${msg}`);
+  }
+}
+let player100 = new Player2(100, "Elzero", 95);
+
+console.log(player100.id); // 100
+console.log(player100.title); // "Elzero"
+console.log(player100.level); // 95
+player100.logIn(); // Logged In
+player100.logOut("Good Bye"); // Logged Out, Good Bye
